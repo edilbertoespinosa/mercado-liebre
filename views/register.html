@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registro</title>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+     <form action="/">
+          <div class="nombreRegistro">
+               <label for="nombreRegistro">Nombre y Apellido : </label>
+               <input type="text" name="nombreRegistro" id="nombreRegistro" placeholder="Juan Perez" required="true" ,
+                    minlength="5">
+          </div>
+          <div class="usuarioRegistro">
+               <label for="usuarioRegistro">Nombre de Usuari@ : </label>
+               <input type="text" name="usuarioRegistro" id="usuarioRegistro" placeholder="ventasLatinas"
+                    required="true" , minlength="5">
+          </div>
+          <div class="nacimientoRegistro">
+               <label for="nacimientoRegistro">Fecha De Nacimiento : </label>
+               <input type="date" name="nacimientoRegistro" name="nacimientoRegistro" id="nacimientoRegistro"
+                    min="1950-01-01">
+          </div>
+          <div class="domicilioRegistro">
+               <label for="domicilioRegistro">Domicilio : </label>
+               <input type="text" name="domicilioRegistro" id="domicilioRegistro">
+          </div>
+          <div class="perfilRegistro">
+               <label for="perfilRegistro">Perfil Del Usuario</label>
+               <section>
+                    <label>
+                         <input type="radio" name="perfilRegistro" id="perfilRegistro" value="Vendedor"> Vendedor
+                    </label>
+                    <label>
+                         <input type="radio" name="perfilRegistro" id="perfilRegistro" value="Comprador"> Comprador
+                    </label>
+               </section>
+          </div>
+          <div class="categoriasRegistro">
+               <label for="categoriasRegistro">Categorias De Interés : </label>
+               <section class="selectMultiple">
+                    <label><input type="checkbox" name="categoriasRegistro" value="Electro">Electro</label>
+                    <label><input type="checkbox" name="categoriasRegistro" value="Moda">Moda</label>
+                    <label><input type="checkbox" name="categoriasRegistro" value="Hogar">Hogar</label>
+                    <label><input type="checkbox" name="categoriasRegistro" value="Jugueteria">Juguetería</label>
+                    <label><input type="checkbox" name="categoriasRegistro" value="VidaSana">Vida Sana</label>
+               </section>
+          </div>
+          <div class="fotoUsuarioRegistro">
+               <label for="fotoUsuario">Selecciona Tu Foto De Perfil : </label>
+               <input type="file" name="fotoUsuario" id="fotoUsuario" accept="image/*">
+          </div>
+          <div class="passwordRegistro">
+               <label for="password">Ingresa Tu Contraseña : </label>
+               <input type="password" name="password" id="password">
+          </div>
+          <div class="confirmaRegistro">
+               <label for="confirma">Confirma Tu Contraseña : </label>
+               <input type="password" name="confirma" id="confirma">
+          </div>
+          <div class="botones">
+               <button type="submit">Aceptar</button>
+               <button type="reset" class="botonCancelar">Cancelar</button>
+          </div>
+     </form>
+</body>
+
+</html>
