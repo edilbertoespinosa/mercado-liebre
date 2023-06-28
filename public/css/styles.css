@@ -129,8 +129,13 @@ h3,
 }
 
 .description {
-  display: none;
+  opacity: 0;
   margin-top: 20px;
+  transition: all 500ms;
+}
+
+article:hover .description {
+  opacity: 1;
 }
 
 section.banner img {
@@ -168,6 +173,11 @@ main section article i {
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: transform 2s;
+}
+
+main section article i:hover {
+  transform: rotate(-0.25turn);
 }
 
 main section h3 {
@@ -182,6 +192,15 @@ article div.main-article {
   border-top: 1px solid #ebebeb;
   position: relative;
   padding: 15px;
+}
+
+article {
+  box-shadow: none;
+  transition: all 500ms;
+}
+
+article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 footer {
@@ -242,6 +261,15 @@ form div.botones {
   padding-left: 40%;
 }
 
+#aceptarLogin {
+  transition: all 450ms;
+}
+
+#aceptarLogin:hover {
+  background-color: #0022aa;
+  color: #ebebeb;
+}
+
 /* A partir de aqui es la zona de Tablet  */
 
 @media (min-width: 361px) {
@@ -274,9 +302,9 @@ form div.botones {
     display: block;
   }
 
-  main section article {
+  /* main section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
+  } */
 
   main section div.products {
     display: flex;
@@ -315,5 +343,14 @@ form div.botones {
   form div.passwordLogin {
     display: block;
     padding: 10px 20% 10px 20%;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer article {
+    width: 32%;
   }
 }
