@@ -1,8 +1,10 @@
 # mercado-liebre
 
+## Proyecto de maquetación de un site de comercio electronico
+
 ## Autor : Edilberto Espinosa
 
-## Proyecto de maquetación de un site de comercio electronico
+## Utiliza Las Tecnologias Express, HTML y CSS
 
 ## Implementacion en Render https://mercado-liebre-ees.onrender.com/
 
