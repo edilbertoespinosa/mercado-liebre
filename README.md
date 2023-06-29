@@ -14,7 +14,7 @@
 
 ## Requiere la dependencia dev : "nodemon": "^2.0.22"
 
-## Al clonarlo se deben instalar depoendiencias mediante la instruccion npm install
+## Al clonarlo se deben instalar dependiencias mediante la instruccion npm install
 
 ## Para ejecutarlo en modo dev ejecutar npm run dev
 
