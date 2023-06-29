@@ -2,7 +2,8 @@ const express = require("express");
 const path = require("node:path");
 
 const app = express();
-const PUERTO = 3000;
+const PUERTO = process.env.PORT || 3001;
+
 const pathPublic = path.resolve(__dirname, "./public");
 app.use(express.static(pathPublic));
 
