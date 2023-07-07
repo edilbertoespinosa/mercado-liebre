@@ -50,6 +50,7 @@ header .form {
 }
 
 header nav {
+  display: flex;
   font-size: 12px;
   margin-left: 20px;
   display: none;
@@ -223,6 +224,7 @@ footer h2 {
 
 footer div i {
   font-size: 2em;
+  margin-bottom: 10px;
   color: #1259c3;
 }
 
@@ -335,6 +337,21 @@ form div.botones {
 }
 
 @media (min-width: 769px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header nav ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   main section div.products article {
     width: 22%;
   }
